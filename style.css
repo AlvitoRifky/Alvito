@@ -1,0 +1,298 @@
+
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+ 
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    margin: 0px;
+    background-color: rgb(0, 0, 0);
+   
+    
+} 
+nav{
+  transition: top 0.3s;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.navbar .nav-nama{
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+.navbar .nav-nama span{
+  color: rgb(154, 137, 16);
+}    
+.navbar .navbar-nav a{
+  color: white;
+  display: inline-block;
+  margin: 0.5rem;
+  font-weight: 500;
+}
+.navbar .navbar-nav a:hover{
+  color:rgb(154, 137, 16);
+}
+.navbar .navbar-nav a::after{
+  content:'' ;
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid rgb(154, 137, 16);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+.navbar .navbar-nav a:hover::after{
+  transform: scaleX(0.5);
+}
+#menu {
+  display: none;
+  color: white;
+}
+
+/*hero section*/
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+.hero .content {
+  padding: 1.4rem 7%;
+  max-width: 50rem;
+
+}
+.hero .content h1{
+  font-size: 4em;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+  line-height: 1.1;
+  border-bottom: 4px solid white;
+}
+.hero .content h2{
+  font-size: 1.5em;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+  line-height: 1.4;
+  margin-top: 1rem;
+  font-weight: 400;
+  
+ 
+}
+.hero .content p {
+  font-size: 1em;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  color: rgb(154, 137, 16);
+  display: flex;
+  
+}
+.hero .content a{
+  
+  color: rgb(255, 255, 255);
+  
+  
+}
+.hero .content h2 span{
+ font-weight: 700;
+}
+
+/* about section */
+.about{
+  padding: 10rem 7% 1.4rem;
+ 
+}
+.about h2{
+  font-size: 2.1rem;
+  padding-bottom: 4rem;
+}
+.about .row {
+  display: flex;
+}
+.about .row .about-img{
+  flex: 1 1 35rem;
+  padding-left: 5rem;
+  
+}
+.about .row .about-img img{
+  width: 70%;
+  border: 5px solid white;
+ 
+}
+.about .row .content{
+  flex: 1 1 45rem;
+  
+}
+
+/*skill section*/
+
+.skill h2{
+  font-size: 2.1em;
+  text-align: center;
+  padding: 8em 7% 1.4em;
+}
+.skill .isi {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  line-height: 4em;
+  
+}
+
+.skill .isi a{
+  border: 2px dashed white;
+  margin: 0.6rem;
+  margin-top: 2rem;
+  padding: 0.3rem;
+  flex-wrap: wrap;
+}
+/*project section*/
+
+.project{
+  padding: 10rem 7% 1.4rem;
+}
+.project .hasil{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  margin: 2rem;
+  justify-content: center;
+}
+.project .hasil .isi{
+  max-width: 500px;
+  width: 100%;
+  height: 450px;
+  margin: 2rem;
+  background-color:rgba(128, 128, 128, 0.342);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Menetapkan tata letak konten sebagai kolom */
+ 
+
+}
+.project .hasil .isi img{
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+  padding-top: 20px;
+  align-self: center;
+  
+}
+.project .hasil .isi .title-project{
+  padding: 20px;
+  text-align: center;
+}
+.project .hasil .isi .desc{
+  padding: 20px;
+  
+}
+/*project section*/
+footer{
+  background-color:  rgb(56, 56, 56);
+  text-align: center;
+  padding: 1rem 0 2rem;
+  margin-top: 3rem;
+  
+}
+footer .sosial{
+  padding: 1rem 0;
+}
+footer .sosial p{
+  padding-bottom: 2rem ;
+  font-weight: bolder;
+}
+footer .sosial a{
+  color: white;
+  margin: 1rem;
+}
+footer .sosial a:hover{
+  color: black;
+}
+footer .credit{
+ padding-top: 1rem;
+}
+footer .credit a{
+  color: rgb(154, 137, 16);
+  font-weight: 700;
+}
+/* media queris */
+
+
+/* laptop */
+
+/* tablet */
+@media(max-width: 768px){
+  body {
+    font-size: 62.5%;
+  }
+  #menu {
+  display: inline-block;
+  
+}
+.navbar .navbar-nav{
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  background-color: rgb(24, 24, 24);
+  width: 20rem;
+  height: 100vh;
+  transition: 0.3s;
+}
+
+.navbar .navbar-nav.active{
+  right: 0;
+}
+.navbar .navbar-nav a{
+  display: block;
+  margin: 1.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.navbar .navbar-nav a::after{
+  transform-origin: 0 0;
+}
+.navbar .navbar-nav a:hover:after{
+  transform: scaleX(0.2);
+}
+.about .row {
+  flex-wrap: wrap-reverse;
+}
+.about .row .about-img img{
+  height: 20rem;
+  object-fit: cover;
+  object-position: center;
+  
+}
+.about .row .content{
+  padding-top: 2rem;
+}
+
+/* HP */
+@media(max-width: 450px){
+  body {
+    font-size: 100%;
+  }
+}
+
+
+}
