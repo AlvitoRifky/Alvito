@@ -191,8 +191,8 @@ nav{
 
 }
 .project .hasil .isi img{
-  width: 70%;
-  height: auto;
+  width: 350px;
+  height: 194px;
   object-fit: cover;
   padding-top: 20px;
   align-self: center;
