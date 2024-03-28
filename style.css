@@ -206,7 +206,19 @@ nav{
   padding: 20px;
   
 }
-/*project section*/
+.project .hasil .isi a{
+ 
+  color: white;
+  padding: 20px;
+  text-align: right;
+  padding-top: 50px;
+ 
+  
+}
+.project .hasil .isi a:hover{
+  color: black;
+}
+/*footer section*/
 footer{
   background-color:  rgb(56, 56, 56);
   text-align: center;
