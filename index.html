@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!--Style-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!--navbar-->
@@ -28,7 +29,7 @@
      <a  id="menu"><i data-feather="menu"></i></a>
     </nav>
     <!--hero section-->
-    <section class="hero" id="home">
+    <section class="hero" id="home" data-aos="fade-right" data-aos-duration="1000">
         <main class="content">
             <h1>Halo <br> Semuanya</h1>
             <h2>Saya <span>Alvito Rifky Dienova</span></h2>
@@ -40,27 +41,28 @@
     <!--About section-->
     <section class="about" id="about">
         
-        <h2>About</h2>
+        <h2 data-aos="fade-right" data-aos-duration="1000">About</h2>
         <div class="row">
-        <div class="content">
+        <div class="content"data-aos="fade-right"data-aos-duration="1000">
             <p> Saya adalah pribadi yang tertarik pada bidang IT dan Programmer. 
            Dengan memiliki keahlian menggunakan bahasa pemrograman seperti HTML, CSS, PHP, Dan Laravel. Saya Dapat bekerja dalam situasi apapun dan bisa beradaptasi di lingkungan baru. 
             Dan saya juga memiliki basic Vue.js dan JavaScript</p>
         </div>
         
-        <div class="about-img">
+        <div class="about-img" data-aos="fade-left" data-aos-duration="1000">
              <p><img src="img/vito.jpeg" alt="vito"></p>
         </div>
         </div>
     </section>
 
     <section class="skill" id="skill">
-        <h2>Skill</h2>
-        <div class="isi">
+        <h2 data-aos="fade-up" data-aos-duration="1000">Skill</h2>
+        <div class="isi" data-aos="fade-up" data-aos-duration="1000">
            <a>HTML</a>
            <a>CSS</a>
            <a>Laravel</a>
            <a>PHP</a>
+           <a>Odoo</a>
            <a>JavaScript</a>
            <a>RESTful API</a>
            <a>Mysql</a>
@@ -68,31 +70,30 @@
     </section>
     
     <section class="project" id="project">
-        <h2>Project</h2>
-        <div class="hasil">
-            <div class="isi">
+        <h2 data-aos="fade-right" data-aos-duration="1000">Project</h2>
+        <div class="hasil" data-aos="zoom-in-up" data-aos-duration="1000">
+                       
+            <div class="isi"data-aos="zoom-in-up" data-aos-duration="1000">
                 <img src="img/project_1.png" alt="project_1">
                 <h3 class="title-project">Portofolio</h3>
                 <p class="desc">membuat portofolio menggunakan css,html,dan javascript</p>
             </div>
-            <div class="isi">
-                <img src="img/project_1.png" alt="project_1">
-                <h3 class="title-project">Portofolio</h3>
-                <p class="desc">membuat portofolio menggunakan css,html,dan javascript</p>
-            </div>
-            <div class="isi">
-                <img src="img/project_1.png" alt="project_1">
-                <h3 class="title-project">Portofolio</h3>
-                <p class="desc">membuat portofolio menggunakan css,html,dan javascript</p>
-            </div>
-            <div class="isi">
-                <img src="img/project_1.png" alt="project_1">
-                <h3 class="title-project">Portofolio</h3>
-                <p class="desc">membuat portofolio menggunakan css,html,dan javascript</p>
+            <div class="isi"data-aos="zoom-in-up" data-aos-duration="1000">
+                <img src="img/Screenshot (434).png" alt="project_1">
+                <h3 class="title-project">Toko Online</h3>
+                <p class="desc">membuat toko online menggunakan pemrograman php</p>
             </div>
         </div>
 
     </section>
+
+    <!-- <section class="project2" id="project2">
+        <h2>Another Project</h2>
+        <div class="gambar">
+        <a href="https://www.pixiv.net/en/users/99988819"><img src="img/tau ah no bg.png"></a>
+        <h3>click me</h3>
+        </div>
+    </section> -->
     
     <footer>
         <div class="sosial">
@@ -113,6 +114,10 @@
 
     <!-- java -->
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     
 </body>
 </html>

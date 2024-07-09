@@ -177,6 +177,8 @@ nav{
   margin: 2rem;
   justify-content: center;
 }
+
+
 .project .hasil .isi{
   max-width: 500px;
   width: 100%;
@@ -190,12 +192,17 @@ nav{
  
 
 }
+.project .hasil .isi:hover{
+  box-shadow: 0 6px 50px 0 rgba(255, 255, 255, 0.814), 0 6px 20px 0 rgba(255, 255, 255, 0.814);
+  
+}
 .project .hasil .isi img{
-  width: 70%;
-  height: auto;
+  width: 350px;
+  height: 194px;
   object-fit: cover;
   padding-top: 20px;
   align-self: center;
+
   
 }
 .project .hasil .isi .title-project{
@@ -205,6 +212,39 @@ nav{
 .project .hasil .isi .desc{
   padding: 20px;
   
+}
+.project .hasil .isi a{
+ 
+  color: white;
+  padding: 20px;
+  text-align: right;
+  padding-top: 50px;
+ 
+  
+}
+.project .hasil .isi a:hover{
+  color: black;
+
+}
+
+.project2{
+  padding: 10rem 7% 1.4rem;
+}
+.project2 h2{
+  text-align: center;
+}
+
+.project2 .gambar{
+  text-align: center;
+  padding: 10rem;
+}
+.project2 .gambar img{
+  width: 400px;
+  height: 400px;
+  
+}
+.project2 .gambar img:hover{
+  box-shadow: 0 4px 100px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 /*project section*/
 footer{
